@@ -4,25 +4,26 @@
 #read in how many lines there are
 Lines = int(input())
 #setup output variable
-Output=""
+Output = ""
+CurrentLine=""
 #loop through the lines
 for i in range(0,Lines):
     #read in a line
     CurrentLine=input()
-    #set the current char variable and give it a dummy value
-    CurrentChar="a"
-    #set the current count to 0
-    CurrentCount=0
-    #set the previous count variable and give it a dummy value
-    PreviousChar=""
+#set the current char variable and give it a dummy value
+CurrentChar="a"
+#set the current count to 0
+CurrentCount=0
+#set the previous count variable and give it a dummy value
+PreviousChar=""
 #loop through the characters in the line
 for j in range(1,len(CurrentLine)):
-        #if it's your first line,
+    #if it's your first line,
     if j == 0:
         #set the current char to the current letter
         CurrentChar=CurrentLine[j]
         #set the count to 1
-        CurrentCount=3
+        CurrentCount=1
     else:
         #set previous to current char
         PreviousChar=CurrentChar
