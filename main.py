@@ -38,7 +38,7 @@ for j in range(1,len(CurrentLine)):
             Output+=str(CurrentCount)+""+str(PreviousChar)+""
             #add the count of the last letter to the output
             #set the count back to 1
-            currentCount=1
+            CurrentCount=1
             #If we're on the last character
     if j == len(CurrentLine)-1:
                 #add the character count to the output
