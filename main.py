@@ -16,7 +16,7 @@ CurrentCount=0
     #set the previous count variable and give it a dummy value
             PreviousChar=""
     #loop through the characters in the line
-    for j in range(1,len(CurrentLine):
+    for j in range(1,len(CurrentLine)):
         #if it's your first line,
         if j == 0:
             #set the current char to the current letter
