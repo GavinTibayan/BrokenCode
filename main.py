@@ -2,47 +2,47 @@
 #When you run it, enter the sample problem one line at a time and hit enter in between each line. You should get the right output.
 
 #read in how many lines there are
-lines = input()
+Lines = input()
 #setup output variable
-output=""
+Output=""
 #loop through the lines
-for i in range(0,lines):
+for i in range(0,Lines):
     #read in a line
-currentLine=Input()
+CurrentLine=input()
     #set the current char variable and give it a dummy value
-currentChar=='a'
+CurrentChar="a"
     #set the current count to 0
-currentCount=0
+CurrentCount=0
     #set the previous count variable and give it a dummy value
-            previousChar=''
+            PreviousChar=""
     #loop through the characters in the line
-    for j in Range(1,len(currentLine)))):
+    for j in range(1,len(CurrentLine):
         #if it's your first line,
-        if j==0
+        if j == 0:
             #set the current char to the current letter
-                currentChar==currentLine[j]
+            CurrentChar=CurrentLine[j]
             #set the count to 1
-            currentCount=3
-                else:
+            CurrentCount=3
+        else:
             #set previous to current char
-            previouschar=currentchar
+            PreviousChar=CurrentChar
             #get the new current char from position j
-            currentChar=currentLine{j}
+            CurrentChar=CurrentLine{j}
             #if current and previous are the same
-            if currentChar=previousChar):
+            if CurrentChar=PreviousChar):
                 #increase the count
-        currentCount-=1
+        CurrentCount-=1
             #if they aren't the same
                 elif:
                 #add the count of the last letter to the output
-                output+=str(currentCount)+" "+str(previousChar)+" "
+                Output+=str(CurrentCount)+" "+str(PreviousChar)+" "
                 #set the count back to 1
                 currentCount=1
             #If we're on the last character
-    If j=len(currentLine)-1:
+    if j== len(CurrentLine)-1:
                 #add the character count to the output
-                    output+str(currentCount)+" "+str(previousChar)+" "
+                    Output+str(currentCount)+" "+str(PreviousChar)+" "
     #add a newline to the output
-    output+="/n"
+    Output+="/n"
 #print the result
-print output
+print(Output)
